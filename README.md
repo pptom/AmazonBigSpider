@@ -7,7 +7,7 @@
 网站端见：Web is GoAmazonWeb See [https://github.com/hunterhug/AmazonBigSpiderWeb](https://github.com/hunterhug/AmazonBigSpiderWeb)
 
 
-英文已经凌乱，仔细阅读，有益身心，中文见[](china.md)
+英文已经凌乱，仔细阅读，有益身心，中文见[中文版说明](china.md)
 
 # Distributed GoAmazon Spider
 Ad API Go to [http://affiliate-program.amazon.com/](http://affiliate-program.amazon.com/)
