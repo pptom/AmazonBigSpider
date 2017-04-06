@@ -1,0 +1,8 @@
+0 2 * * * wget -c /root/data http://14.215.177.38/file/sql/usaasin$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 smartdb < /root/data/usaasin$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 2 * * * wget -c /root/data http://14.215.177.38/file/sql/usa$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 smartdb < /root/data/usa$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 3 * * * wget -c /root/data http://14.215.177.38/file/sql/jpasin$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 jp_smartdb < /root/data/jpasin$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 3 * * * wget -c /root/data http://14.215.177.38/file/sql/jp$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 jp_smartdb < /root/data/jp$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 4 * * * wget -c /root/data http://14.215.177.38/file/sql/deasin$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 de_smartdb < /root/data/deasin$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 4 * * * wget -c /root/data http://14.215.177.38/file/sql/de$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 de_smartdb < /root/data/de$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 5 * * * wget -c /root/data http://14.215.177.38/file/sql/ukasin$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 uk_smartdb < /root/data/ukasin$(date -d yesterday +\%Y\%m\%d).sql.gz
+0 5 * * * wget -c /root/data http://14.215.177.38/file/sql/uk$(date -d yesterday +\%Y\%m\%d).sql.gz && mysql -uroot -psmart2016 uk_smartdb < /root/data/uk$(date -d yesterday +\%Y\%m\%d).sql.gz

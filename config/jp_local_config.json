@@ -1,0 +1,64 @@
+{
+  "Type":"JP",
+  "Datadir": "/data/db/jp",
+  "Proxypasswd": "smart:smart2016@",
+  "Proxymaxtrytimes": 40,
+  "Rank":80000,
+  "Listtasknum": 30,
+  "Asintasknum": 30,
+  "Localtasknum": 150,
+  "Proxypool": "jpIPPOOL",
+  "Proxyhashpool": "jpIPPOLLHASH",
+  "Proxyloophours":24,
+  "Proxyasin":true,
+  "Proxycategory":true,
+  "Proxyinit": false,
+  "Urlpool": "jpURLPOOL",
+  "Urldealpool": "jpURLDEALPOOL",
+  "Urlhashpool": "jpURLHASHPOOL",
+  "Asinpool": "jpAsinPOOL",
+  "Asindealpool": "jpAsinDEALPOOL",
+  "Asinhashpool": "jpAsinHASHPOOL",
+  "Otherhashpool":"jpOtherHashPOOL",
+  "Asinautopool": true,
+  "ExtraFromRedis":true,
+  "Asinlocalkeep":false,
+  "Categorylocalkeep":false,
+  "Urlsql": "SELECT distinct url,id,bigpid ,name,bigpname,page FROM smart_category where isvalid=1 order by bigpid limit 100000",
+  "Asinsql": "SELECT distinct asin as id FROM `{?}` order by bigname limit 1000000",
+  "Spidersleeptime": 3,
+  "Spidertimeout": 35,
+  "Spiderloglevel": "DEBUG",
+  "Redisconfig": {
+    "Host": "127.0.0.1:6379",
+    "Password": "smart2016",
+    "DB": 0
+  },
+  "Redispoolsize":100,
+  "Basicdb": {
+    "Ip": "127.0.0.1",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "jp_smart_base"
+  },
+  "Hashdb": {
+    "Ip": "127.0.0.1",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "jp_smart_hash"
+  },
+  "Hashnum":500,
+  "Datadb": {
+    "Ip": "127.0.0.1",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "jp_smartdb"
+  },
+  "Ipuse": {
+  },
+  "Ips": {
+  }
+}

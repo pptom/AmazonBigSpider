@@ -1,0 +1,63 @@
+{
+  "Type": "USA",
+  "Datadir": "/data/db/usa",
+  "Proxymaxtrytimes": 40,
+  "Rank": 80000,
+  "Listtasknum": 30,
+  "Asintasknum": 50,
+  "Localtasknum": 150,
+  "Proxypool": "USAIPPOOL",
+  "Proxyhashpool": "USAIPPOLLHASH",
+  "Proxyloophours": 24,
+  "Proxyasin": true,
+  "Proxycategory": false,
+  "Proxyinit": false,
+  "Urlpool": "USAURLPOOL",
+  "Urldealpool": "USAURLDEALPOOL",
+  "Urlhashpool": "USAURLHASHPOOL",
+  "Asinpool": "USAAsinPOOL",
+  "Asindealpool": "USAAsinDEALPOOL",
+  "Asinhashpool": "USAAsinHASHPOOL",
+  "Otherhashpool": "USAOtherHashPOOL",
+  "Asinautopool": true,
+  "ExtraFromRedis": true,
+  "Asinlocalkeep": false,
+  "Categorylocalkeep": false,
+  "Urlsql": "SELECT distinct url,id,bigpid ,name,bigpname,page FROM smart_category where isvalid=1 order by bigpid limit 100000",
+  "Asinsql": "SELECT distinct asin as id FROM `{?}` order by bigname limit 1000000",
+  "Spidersleeptime": 3,
+  "Spidertimeout": 35,
+  "Spiderloglevel": "DEBUG",
+  "Redisconfig": {
+    "Host": "14.215.177.40:6379",
+    "Password": "smart2016",
+    "DB": 0
+  },
+  "Redispoolsize": 100,
+  "Basicdb": {
+    "Ip": "14.215.177.38",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "smart_base"
+  },
+  "Hashdb": {
+    "Ip": "14.215.177.38",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "smart_hash"
+  },
+  "Hashnum": 500,
+  "Datadb": {
+    "Ip": "14.215.177.38",
+    "Port": "3306",
+    "Username": "root",
+    "Password": "smart2016",
+    "Dbname": "smartdb"
+  },
+  "Ipuse": {
+  },
+  "Ips": {
+  }
+}

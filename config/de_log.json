@@ -1,0 +1,49 @@
+{
+  "UseShortFile": true,
+  "Appenders": {
+    "console": {
+      "Type": "console"
+    },
+    "daylist": {
+      "Type": "dailyfile",
+      "Target": "/log/de/daylist.log"
+    },
+    "dayasin": {
+      "Type": "dailyfile",
+      "Target": "/log/de/dayasin.log"
+    },
+    "dayip": {
+      "Type": "dailyfile",
+      "Target": "/log/de/dayip.log"
+    }
+  },
+  "Loggers": {
+    "daylist": {
+      "Appenders": [
+        "console",
+        "daylist"
+      ],
+      "Level": "error"
+    },
+    "dayasin": {
+      "Appenders": [
+        "console",
+        "dayasin"
+      ],
+      "Level": "error"
+    },
+    "dayip": {
+      "Appenders": [
+        "console",
+        "dayip"
+      ],
+      "Level": "error"
+    }
+  },
+  "Root": {
+    "Level": "debug",
+    "Appenders": [
+      "console"
+    ]
+  }
+}
